@@ -38,6 +38,8 @@ $("#definition-section").hide();
 $("#hide").show();
 $("#starred-section").hide();
 $("#clear").hide();
+$("#modal").hide();
+$("#modal-1").hide()
 
 
 // This is the SEARCH SECTION
@@ -57,9 +59,16 @@ $("#search-btn").click(function () {
     getWord();
     getSong();
   } else {
-    window.alert("Please enter a valid input");
+    $("#modal").show();
   }
 });
+
+$("#modal-btn").click(function () {
+  $("#modal").hide();
+});
+
+
+
 
 // This displays the song section
 $("#audio").click(function () {
@@ -196,10 +205,14 @@ function getSong() {
 
     // This plays the song
     $(".fa-play-circle").click(function () {
-      // Play
-      if (isPlaying == false) {
+      console.log(song.src)
+      if (song.src == "file:///Users/reginaa_fc/project-1/Main/null") {
+        $("#modal-1").show()
+        $("#modal-btn-1").click(function(){
+          $("#modal-1").hide()
+        })
+        } else if (isPlaying == false) {
         play = song.play();
-        console.log("play de la song " + song);
         // This changes the play/pause icon
         $("#play-i")[0].className = "fas fa-pause-circle";
         isPlaying = true;
@@ -208,33 +221,12 @@ function getSong() {
         song.pause();
         $("#play-i")[0].className = "fas fa-play-circle";
         isPlaying = false;
-      }
+      } 
+
+      
     });
 
-    // This makes an array with all the songs that have preview audio to avoid using songs that can't be played
-    var array;
-    if (song.src == "file:///Users/reginaa_fc/project-1/Main/null") {
-      var array = [];
-      // This makes the array and sorts it
-      for (var i = 0; i < response.tracks.items.length; i++) {
-        array.push(response.tracks.items[i].preview_url + "--" + i);
-        array.sort();
-        var topval = array[0].split("--")[1];
-      }
-      // This changes the html
-      $("#Song-name").html(response.tracks.items[topval].name);
-      $("#artist").html(response.tracks.items[topval].artists[0].name);
-      $("#song-cover")[0].attributes[1].nodeValue =
-        response.tracks.items[topval].album.images[0].url;
-      localStorage.setItem(
-        "song-src",
-        response.tracks.items[topval].preview_url
-      );
-      localStorage.setItem("Song", response.tracks.items[topval].name);
-    localStorage.setItem("Artist", response.tracks.items[topval].artists[0].name);
-    song.src = localStorage.getItem("song-src");
-    song.volume = 0.2
-    }
+    
   });
 }
 
@@ -340,6 +332,7 @@ function restoreData() {
   }
 }
 
+// This is for displaying again the info from the starred section
 $("#saved-words-list").on("click", "li.li-el", function (event) {
   song.remove();
   song.volume = 0.2
@@ -358,3 +351,7 @@ $("#saved-words-list").on("click", "li.li-el", function (event) {
   getWord();
   getSong();
 });
+
+
+
+
