@@ -36,10 +36,10 @@ The functionality of the application in the beginning was planned with only 2 AP
 
 There is also the functionality to let the user save the words into Local Storage.
 
-![Screen capture](./Images/ScreenShot-Index.png)
-![Screen capture](./Images/Result-Index.png)
-![Screen capture](./Images/Result-Song.png)
-![Screen capture](./Images/Result-Lyrics.png)
+![Screen capture](./Images/Homepage.png)
+![Screen capture](./Images/WordSearched.png)
+![Screen capture](./Images/MusicResult.png)
+![Screen capture](./Images/LyricsResult.png)
 ![Screen capture](./Images/Favorites.png)
 
 [Link to website](https://reginaafc.github.io/amusectionary/)
