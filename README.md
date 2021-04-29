@@ -21,9 +21,9 @@ The design of our application allows the user to search for words, the word can 
 To develop this application we used the CSS framework Tailwind. It allowed us to have clean and intuitive UI.
 The functionality of the application in the beginning was planned with only 2 API's, a dictionary API and Lyrics API. We ended using 3 API's, listed below:
 
-* LinguaRobot API to get the definition of the word: "https://lingua-robot.p.rapidapi.com/language/v1/entries/en/"
-* Spotify API to search for the generated word in the title of a song and to give a 30 second preview: "https://api.spotify.com/v1/search?q="
-* Lyrics API to get lyrics with the title of the song and the artist name found by the Spotify API: "https://api.lyrics.ovh/v1/"
+* LinguaRobot API to get the definition of the word: <https://lingua-robot.p.rapidapi.com/language/v1/entries/en/>
+* Spotify API to search for the generated word in the title of a song and to give a 30 second preview: <https://api.spotify.com/v1/search?q=>
+* Lyrics API to get lyrics with the title of the song and the artist name found by the Spotify API: <https://api.lyrics.ovh/v1/>
 
 There is also the functionality to let the user save the words into Local Storage.
 
