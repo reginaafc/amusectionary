@@ -3,6 +3,15 @@
 This project was developed by:
 Regina Franco, Alfonso Núñez and Víctor Vallejo.
 
+Why is Amusectionary the best option? 
+
+Nowadays, english is the language of international communication, commerce and finances, as well as the official language of many organizations such as the European Union, the United Nations or UNESCO. 
+
+My team and I understand the importance of learning new languages, especially english, as well as we know that conventional ways of learning are boring, that is why we decided to create Amusectionary, with the aim of providing clients a fun way to learn English. 
+
+With only 5 minutes a day, you can increase your vocabulary in a fun way, all you have to do is enter a word in the search engine and Amusectionary will present you the definition and pronunciation as well as a song with its lyrics so that the user can see the usage of the word. If that weren't enough, a starred screen is also presented so that the user can save the words and see its information again by only clicking at it. 
+
+Learning english has never been so easy, so, what are you waiting for?
 
 The goal of our project was to: 
 * Provide the user with a search interface for a word.
