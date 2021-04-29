@@ -1,6 +1,6 @@
 
 
-#modal, #modal-1 {
+#modal {
   height: 120px;
   width: 250px;
   position:absolute;
@@ -11,15 +11,12 @@
   text-align: center;
 }
 
-#modal-1{
-  height: 140px;
-}
 
-#modal p , #modal-1 p{
+#modal p {
   color: rgb(23, 49, 114);
 }
 
-#modal-btn, #modal-btn-1 {
+#modal-btn{
   margin-top: 15px;
   background-color: rgb(64, 101, 194);
   color: #ffffff;
