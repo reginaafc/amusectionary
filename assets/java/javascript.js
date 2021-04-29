@@ -206,12 +206,7 @@ function getSong() {
     // This plays the song
     $(".fa-play-circle").click(function () {
       console.log(song.src)
-      if (song.src == "file:///Users/reginaa_fc/project-1/Main/null") {
-        $("#modal-1").show()
-        $("#modal-btn-1").click(function(){
-          $("#modal-1").hide()
-        })
-        } else if (isPlaying == false) {
+       if (isPlaying == false) {
         play = song.play();
         // This changes the play/pause icon
         $("#play-i")[0].className = "fas fa-pause-circle";
