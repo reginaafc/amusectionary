@@ -2,7 +2,7 @@
 
 This project was developed by:
 Regina Franco, Alfonso Núñez and Víctor Vallejo.
-Link to the deployed page: <https://reginaafc.github.io/amusectionary/#lyrics>
+
 
 The goal of our project was to: 
 * Provide the user with a search interface for a word.
@@ -33,4 +33,4 @@ There is also the functionality to let the user save the words into Local Storag
 ![Screen capture](./Images/Result-Lyrics.png)
 ![Screen capture](./Images/Favorites.png)
 
-[Link to website](https://reginaafc.github.io/project-1/Main/index.html#lyrics)
+[Link to website](https://reginaafc.github.io/amusectionary/#lyrics)
