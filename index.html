@@ -38,6 +38,8 @@
             </div>
   </header>
 
+  
+
   <!-- This is the DEFINITION section -->
   <section id="definition-section">
     <button id="search-again"><i class="fixed fas fa-arrow-left transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"></i></button>
@@ -62,10 +64,19 @@
     </div>
   </section>
   
+  
+
+
   <!-- This is the SONG CARD section -->
   <section id="song">
     <button><i class="fas fa-arrow-left transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"></i></button>
     <div class="flex items-center justify-center min-h-screen px-5 py-5  min-w-screen">
+      <section id="modal-1" class="relative mt-1 shadow-lg">
+        <div class="items-center justify-center">
+          <p>Oops, it seems that this song can't be played</p>
+          <button id="modal-btn-1"><i class="fas fa-times"></i></button>
+        </div>
+      </section>
       <div class="content shadow-lg" >
         <img
         id="song-cover"
@@ -118,11 +129,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <!-- This is the SEARCH ENGINE section -->
 <section id="search-engine" >
   <div class=" flex items-center justify-center min-h-screen px-5 py-5  min-w-screen">
+    <section id="modal" class="relative mt-1 shadow-lg">
+      <div class="items-center justify-center">
+        <p>Please select a valid input</p>
+        <button id="modal-btn"><i class="fas fa-times"></i></button>
+      </div>
+    </section>
     <div class="search relative p-10  overflow-hidden text-gray-800 bg-gray-100 shadow-lg rounded-xl " >
-        <div class="relative mt-1">
+
+      <div class="relative mt-1">
             <input type="text" id="word-input" class="w-full py-2 pl-3 pr-10 transition-colors border-2 border-gray-200 rounded-xl hover:border-gray-300 focus:outline-none focus:border-blue-500" placeholder="Search...">
             <button class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" id="search-btn"><i class="fas fa-search"></i></button>
           </div>
@@ -151,8 +179,6 @@
   </div>
 
 </section>
-
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
