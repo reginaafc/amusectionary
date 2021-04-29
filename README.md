@@ -1,4 +1,4 @@
-# project-1
+# Project 1: Amusectionary
 
 This project was developed by:
 Regina Franco, Alfonso Núñez and Víctor Vallejo.
